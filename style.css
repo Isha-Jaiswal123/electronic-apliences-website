@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 5rem;
+    background-color: black;
+    position: relative;
+    padding: 0 2rem;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+}
+
+.logo span {
+    color: red;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+
+.navbar {
+    width: 100%;
+    height: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.items {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.bars {
+    color: black;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    display: none;
+}
+
+.search {
+    color: black;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.bars:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.search:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+@media(max-width:870px) {
+    .bars {
+        display: block;
+    }
+
+    .links {
+        display: none;
+    }
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 84px;
+
+    width: 300px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.searchbar {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 94px;
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.firstinput {
+    width: 200px;
+    border: 2px solid black;
+}
+
+#btn {
+    color: white;
+    background-color: skyblue;
+    border-radius: 4px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.dropdown_menu li {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#categories {
+    display: none;
+    position: absolute;
+    right: 24rem;
+    top: 84px;
+
+    width: 300px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#categories li {
+    font-size: 20px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#categories li:hover {
+    background-color: gray;
+
+}
+
+#categories li a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+#home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 6vh;
+    grid-gap: 0.2rem;
+    /* height: 85vh; */
+
+}
+
+.image img {
+    width: 300px;
+    height: 300px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 300px; */
+}
+
+.content h1 {
+    font-size: 45px;
+}
+
+.content h1 span {
+    color: red;
+}
+
+.shop {
+    height: 45px;
+    width: 130px;
+    background-color: red;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.shop:hover {
+    background-color: brown;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.button {
+    margin: 15px;
+}
+
+#products {
+    background-color: whitesmoke;
+
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.heading h1 {
+    font-size: 50px;
+}
+
+.heading h1 span {
+    color: red;
+
+}
+
+.pitem {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    padding: 10vh;
+    grid-gap: 0.2rem;
+
+}
+
+.all {
+    height: 350px;
+    width: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0px;
+    background-color: white;
+}
+
+.all h2 {
+    font-size: 35px;
+    padding: 5px;
+}
+
+.all img {
+    height: 200px;
+    width: 280px;
+}
+
+.stars {
+    padding: 10px;
+}
+
+.cheaked {
+    color: rgb(254, 176, 8);
+}
+
+.price {
+    display: flex;
+    gap: 5rem;
+}
+
+.extra {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 10vh;
+    grid-gap: 0.2rem;
+}
+
+.extraimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extraimg img {
+    width: 300px;
+}
+
+.write {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.write h1 {
+    font-size: 50px;
+}
+
+.write h1 span {
+    color: red;
+}
+
+.lorem {
+    padding: 15px 0px;
+}
+
+.writebtn button {
+    height: 40px;
+    width: 120px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 9px;
+
+}
+
+.writebtn button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.fridge {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    padding: 0vh 10vh;
+    grid-gap: 0.2rem;
+
+}
+
+.abouthead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.abouthead h1 {
+    font-size: 50px;
+}
+
+.abouthead h1 span {
+    color: red;
+}
+
+.aboutwrite {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    padding: 0vh 10vh;
+    grid-gap: 0.2rem;
+
+}
+
+.lorem50 button {
+    background-color: red;
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.lorem50 button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#contact {
+    background-color: whitesmoke;
+
+}
+
+.contacthead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.contacthead h1 {
+    font-size: 50px;
+}
+
+.contacthead h1 span {
+    color: red;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+    padding: 0vh 10vh;
+    grid-gap: 0.2rem;
+}
+
+.touch h3 {
+    margin: 10px 0px;
+    font-size: 20px;
+    color: red;
+}
+
+.lorem30 {
+    margin: 10px 0px;
+}
+
+.touch h4 i {
+    color: red;
+}
+
+.name {
+    margin-bottom: 15px;
+}
+
+.massage h3 {
+    margin: 10px 0px;
+    font-size: 20px;
+    color: red;
+}
+
+.massage {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.same {
+    height: 25px;
+    width: 300px;
+    padding: 9px;
+    margin: 5px;
+}
+
+.sub {
+    height: 50px;
+    width: 300px;
+    padding: 9px;
+    margin: 5px;
+}
+
+.mass {
+    height: 100px;
+    width: 300px;
+    padding: 9px;
+    margin: 5px;
+}
+
+.massage button {
+    width: 120px;
+    height: 30px;
+    background-color: red;
+    color: black;
+    padding: 9px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.massage button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.ship {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    padding: 0vh 10vh;
+    grid-gap: 0.2rem;
+    margin-top: 30px;
+}
+
+.des i {
+    font-size: 30px;
+}
+
+.des h1 {
+    font-size: 30px;
+}
+
+.des h3 {
+    font-size: 14px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15rem;
+
+}
+
+.subscribe h2 {
+    color: red;
+    padding: 9px;
+}
+
+.btn44 input {
+    width: 250px;
+}
+
+.btn44 button {
+    background-color: red;
+    color: black;
+    border-radius: 3px;
+    width: 100px;
+}
+
+.btn44 button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    padding: 10vh;
+    grid-gap: 0.2rem;
+    background-color: red;
+   
+}
+
+.elec h2 {
+    font-size: 30px;
+    padding: 9px;
+
+}
+
+.elec h3 {
+    font-size: 15px;
+    padding: 9px;
+
+}
+
+.usefull h2 {
+
+    font-size: 30px;
+    padding: 9px;
+}
+
+.links1 li {
+    font-size: 15px;
+    padding: 4px;
+
+}
+
+.links1 li a {
+    color: black;
+}
+
+.our_services h2 {
+
+    font-size: 30px;
+    padding: 9px;
+}
+
+.our_services h3 {
+    font-size: 15px;
+    padding: 9px;
+}
+
+.social_media h2{
+    font-size: 30px;
+    padding: 9px;
+}
+.lorem{
+    padding: 9px;
+}
+
+.ending{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    background-color: black;
+    color: white;
+}
+
+.ending span{
+    color: red;
+} 
+
+@media(max-width:750px){
+    .ending{
+        font-size: 20px;
+    }
+}
